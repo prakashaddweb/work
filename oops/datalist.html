@@ -1,0 +1,112 @@
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		:root
+		{
+			--main-bg-color:cyan;
+		}
+		body
+		{
+			padding: 0;
+			margin:0;
+			border: 0;
+			font-family: "Times New Roman", Times, serif;
+			background-color: var(--main-bg-color);
+		}
+	h1:hover
+	{
+		color:red;
+	}
+	div.alternate {
+				box-sizing: border-box;
+				position: relative;
+				top:150px;
+				background-color: green;
+				color:#ffffff ;
+				width:300px;
+				height: 300px;
+
+				height: 100px;
+				}
+	#d1
+	{
+		background-color: red;
+		padding: 10px;
+		width: 100px;
+		animation-name: example;
+		text-align: center;
+	}
+	#d1:hover
+	{
+		background-color: black;
+		color: white;
+	}
+	#d2
+	{
+		width: 100px;
+  		height: 100px;
+  		background-color: red;
+  		animation-name: example;
+  		animation-duration: 4s;
+  		margin-top: 10px;
+	}
+	#d3
+	{
+		width: 100px;
+  		height: 100px;
+  		background-color: red;
+  		animation-name: anime;
+  		animation-duration: 4s;
+  		position: relative;
+  		margin-top: 10px;
+  			animation-iteration-count: infinite;
+	}
+	@keyframes example
+	{
+		0%   {background-color: red;}
+  		25%  {background-color: yellow;}
+  		50%  {background-color: blue;}
+  		100% {background-color: green;}
+	}
+	
+	@keyframes anime
+	{
+		0%   {background-color:red; left:0px; top:0px;}
+ 		 25%  {background-color:yellow; left:200px; top:0px;}
+  		50%  {background-color:blue; left:200px; top:200px;}
+  		75%  {background-color:green; left:0px; top:200px;}
+  		100% {background-color:red; left:0px; top:0px;}
+	}
+	</style>
+	
+</head>
+
+<body>
+	<i class="fas fa-car"></i>
+	<i class="fas fa-wifi"></i>
+	<form>
+
+	<h1>Hello,i am prakash</h1>
+	<span>
+		<h1>WIFI IS NOT WORKING</h1>
+		<h1>&#x25a8;</h1>
+	</span>
+	<div id="d1">This is square</div>
+
+	<div id="d2">This is square</div>
+	<div id="d3">This is square</div>
+	<div class="box alternate">I use the alternate box model.</div>
+	<label>Enter Your Favourite food</label>
+	<input list="ingredients">
+	<datalist id="ingredients">
+		<option value="oranges">
+		<option value="banana">
+		<option value="apple">
+		<option value="gaps">
+	</datalist>
+	</form>
+	
+	
+</body>
+</htm>
